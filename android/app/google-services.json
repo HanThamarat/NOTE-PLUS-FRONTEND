@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "732078894918",
+    "project_id": "noteplus-ad17a",
+    "storage_bucket": "noteplus-ad17a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732078894918:android:3439e773d209e29a8cbf47",
+        "android_client_info": {
+          "package_name": "com.example.noteplus_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATykmcX4iR6dydmQgL9EHrvRGe_zQKGMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
