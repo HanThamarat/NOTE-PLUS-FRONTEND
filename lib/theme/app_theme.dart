@@ -9,11 +9,11 @@ class AppTheme {
   static Color get _lightFocus => HexColor('00CE86');
 
   // Dark theme colors
-  static Color get _darkPrimary => HexColor('64B5F6');
-  static Color get _darkSurface => HexColor('121212');
-  static Color get _darkSurfaceContainer => HexColor('1E1E1E');
-  static Color get _darkOnSurface => HexColor('E0E0E0');
-  static Color get _darkFocus => HexColor('00CE86');
+  static Color get _darkPrimary => HexColor('22C55E'); // accent green
+  static Color get _darkSurface => HexColor('050816'); // page background
+  static Color get _darkSurfaceContainer => HexColor('111827'); // cards / panels
+  static Color get _darkOnSurface => HexColor('E5E7EB');
+  static Color get _darkFocus => HexColor('22C55E');
 
   static ThemeData get lightTheme {
     return ThemeData(
@@ -57,13 +57,13 @@ class AppTheme {
       brightness: Brightness.dark,
       colorScheme: ColorScheme.dark(
         primary: _darkPrimary,
-        onPrimary: Colors.black87,
+        onPrimary: Colors.black,
         surface: _darkSurface,
         onSurface: _darkOnSurface,
         surfaceContainerHighest: _darkSurfaceContainer,
         error: Colors.redAccent,
         onError: Colors.black,
-        outline: Colors.grey.shade600,
+        outline: Colors.grey.shade700,
       ),
       scaffoldBackgroundColor: _darkSurface,
       inputDecorationTheme: InputDecorationTheme(
