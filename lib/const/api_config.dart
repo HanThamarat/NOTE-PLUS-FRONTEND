@@ -1,4 +1,4 @@
 class ApiConfig {
-  static const String baseUrl = 'https://note-plus-backend.onrender.com';
+  static const String baseUrl = 'http://172.18.64.1:3000';
 }
 
