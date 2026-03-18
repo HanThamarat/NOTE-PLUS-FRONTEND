@@ -4,8 +4,13 @@ import 'package:noteplus_app/pages/layouts/nav.dart';
 import 'package:noteplus_app/pages/layouts/slide.dart';
 
 class MasterLayout extends StatefulWidget {
+  final String currentPath;
   final Widget child;
-  const MasterLayout({super.key, required this.child});
+  const MasterLayout({
+    super.key,
+    required this.currentPath,
+    required this.child,
+  });
 
   @override
   State<MasterLayout> createState() => _MasterLayoutState();
@@ -20,12 +25,12 @@ class _MasterLayoutState extends State<MasterLayout> {
       backgroundColor: colorScheme.surface,
       body: Row(
         children: [
-          const SideBar(),
+          SideBar(currentPath: widget.currentPath),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const NavBarComponent(),
+                NavBarComponent(currentPath: widget.currentPath),
                 Expanded(
                   child: Container(
                     color: colorScheme.surface,
